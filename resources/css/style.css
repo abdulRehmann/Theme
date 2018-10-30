@@ -5,12 +5,13 @@
 /******************************** Page Components *********************************/
 /**********************************************************************************/
 * {
-    
+    padding: 0;
+    margin: 0;
 }
 
-.header, section {
+.header, .header-contact, section {
     padding: 30px 60px;
-    width: auto;
+    width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -39,11 +40,32 @@ p, .card-text {
     flex: 1;
 }
 
+.btn-dark {
+    color: #fff !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
+    letter-spacing: 0.1em;
+}
+
 /******************************** Header ******************************************/
 /**********************************************************************************/
 
 /* ------------------ Nav ------------------ */
 /* ----------------------------------------- */
+
+.navbar-collapse {
+    transition: 1s ease-in-out;
+    letter-spacing: 1em;
+}
+
+.navbar-light .navbar-toggler {
+    color: none !important;
+    border-color: none !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
 
 .navbar .navbar-nav .nav-item a, .header .header-text {
     color: #fff !important;
@@ -103,6 +125,12 @@ p, .card-text {
     width: 200px;
     text-align: right !important;
     letter-spacing: 0.08em;
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar .navbar-nav .nav-item {
+        width: 100%;
+    }
 }
 
 /* .navbar-light .navbar-toggler {
@@ -232,7 +260,8 @@ p, .card-text {
 /**************************************************************************************************/
 
 .footer {
-    padding: 60px 0px;
+    padding: 0px 0px 60px 0px;
+    height: 500px;
     background: #000;
 }
 
